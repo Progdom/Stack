@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EB115B0416F93FAC00B16237 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB115B0316F93FAC00B16237 /* main.cpp */; };
 		EB115B0616F93FAC00B16237 /* Stack.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB115B0516F93FAC00B16237 /* Stack.1 */; };
+		EB115B0E16F93FF700B16237 /* Stack.implementation in Sources */ = {isa = PBXBuildFile; fileRef = EB115B0D16F93FF700B16237 /* Stack.implementation */; };
+		EB115B1116F9495500B16237 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB115B1016F9495500B16237 /* Tools.cpp */; };
+		EB115B1416F94C5700B16237 /* WFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB115B1316F94C5700B16237 /* WFF.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		EB115B0016F93FAC00B16237 /* Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stack; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB115B0316F93FAC00B16237 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EB115B0516F93FAC00B16237 /* Stack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Stack.1; sourceTree = "<group>"; };
+		EB115B0C16F93FBE00B16237 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		EB115B0D16F93FF700B16237 /* Stack.implementation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stack.implementation; sourceTree = "<group>"; };
+		EB115B0F16F9494E00B16237 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		EB115B1016F9495500B16237 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
+		EB115B1216F94C0100B16237 /* WFF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFF.h; sourceTree = "<group>"; };
+		EB115B1316F94C5700B16237 /* WFF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WFF.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 			children = (
 				EB115B0316F93FAC00B16237 /* main.cpp */,
 				EB115B0516F93FAC00B16237 /* Stack.1 */,
+				EB115B0C16F93FBE00B16237 /* Stack.h */,
+				EB115B1216F94C0100B16237 /* WFF.h */,
+				EB115B1316F94C5700B16237 /* WFF.cpp */,
+				EB115B0D16F93FF700B16237 /* Stack.implementation */,
+				EB115B0F16F9494E00B16237 /* Tools.h */,
+				EB115B1016F9495500B16237 /* Tools.cpp */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -118,6 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB115B0416F93FAC00B16237 /* main.cpp in Sources */,
+				EB115B0E16F93FF700B16237 /* Stack.implementation in Sources */,
+				EB115B1116F9495500B16237 /* Tools.cpp in Sources */,
+				EB115B1416F94C5700B16237 /* WFF.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

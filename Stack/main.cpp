@@ -7,12 +7,18 @@
 //
 
 #include <iostream>
+#include "Stack.h"
+#include "WFF.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    DStack<int> stack;
+    
+    stack.push(5);
+    stack.print();
+    cout << "woot";
+    
     return 0;
 }
 

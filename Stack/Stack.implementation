@@ -1,0 +1,72 @@
+//
+//  Stack.cpp
+//  Stack
+//
+//  Created by Isaac Brown on 3/19/13.
+//  Copyright (c) 2013 Isaac Brown. All rights reserved.
+//
+
+#include<iostream>
+#include "Stack.h"
+
+using namespace std;
+
+template <class T>
+DStack<T>::DStack(T N)               // how to initalize a stack with
+{                                   //   N items.
+    bottom_ = new T[N];
+    top_ = bottom_;
+    size_ = N;
+}
+
+template <class T>
+DStack<T>::~DStack()                   // how to reclaim memory from local
+{                                   //   stacks when exiting functions
+    delete [] bottom_;
+}
+
+template <class T>
+T DStack<T>::num_items() const       // number of items currently in stack
+{
+    return (top_ - bottom_ );
+}
+
+template <class T>
+void DStack<T>::push(T val)        // push a new value
+{
+    *top_ = val;
+    top_++;
+}
+
+template <class T>
+T DStack<T>::pop()                 // pop value from top
+{
+    top_--;
+    return *top_;
+}
+
+template <class T>
+T DStack<T>::full() const            // 1 if full, 0 otherwise
+{
+    return (num_items() >= size_);
+}
+
+template <class T>
+T DStack<T>::empty() const           // 1 if empty, 0 otherwise
+{
+    return (num_items() <= 0);
+}
+
+template <class T>
+void DStack<T>::print() const
+{
+    
+    cout << "Stack currently holds " << num_items() << " items: " ;
+    for (T *element=bottom_; element<top_; element++)
+    {
+        cout << "  " << *element;
+    }
+    cout << "\n";
+    
+}
+
