@@ -11,7 +11,7 @@
 #ifndef Stack_WFF_h
 #define Stack_WFF_h
 
-bool isValidWFF (string formula);
+bool isValidWFF (std::string formula);
 
 
 #endif
